@@ -87,7 +87,7 @@ w3w = {
 		// Get the coordinates from 3 words, checking to make sure the word pattern is correct	
 		$('#btnGo').click(function(ev) {
 			var word = $('#txtWhat3Words')[0].value;
-			var pattern = /\w.\w.\w/g;
+			var pattern = /\w*\.\w*\.\w*/g;
 			
 			// check pattern
 			if (pattern.test(word)) {
